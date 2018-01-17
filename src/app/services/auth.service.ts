@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Token } from '../models/Token';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-import { Subect } from 'rxjs/Subject';
+import { Subject } from 'rxjs/Subject';
 
 const Api_Url = 'http://kcpelevennoteapie.azurewebsites.net';
 

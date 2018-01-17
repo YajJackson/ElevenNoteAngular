@@ -15,11 +15,13 @@ import {
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RegistrationComponent } from './components/registration/registration.component';
+import { LoginComponent } from './components/login/login.component';
 
 import { AuthService } from './services/auth.service';
 
 const routes = [
   {path: 'register', component: RegistrationComponent},
+  {path: 'login', component: LoginComponent},
   {path: '**', component: RegistrationComponent}
 ];
 
@@ -27,7 +29,8 @@ const routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    LoginComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
